@@ -92,8 +92,18 @@
 	}
 	.search {
 	  position: absolute;
-	  right: 65px;
-	  top: 19px;
+	  right: 115px;
+	  top: 28px;
 	  width: 100px;
+	}
+	.pdf{
+		font-size: 3px;
+	}
+	.logo{
+		position: absolute;
+		top: 0;
+		left: 6px;
+		max-width: 100%;
+		height: auto;
 	}
   }
