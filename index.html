@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<script src="bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+		<link rel="stylesheet" href="home.css">
+		<link rel="stylesheet" href="navbar-footer.css" />
+		<meta name="" content="width=device-width, inicial-scale=1"/>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="responsive.css" />
+		<script src="jquery.min.js"></script>
+	</head>
+	<body style="background-color: #faf4eb;">
+
+
+		<!--PART OF NAVBAR-->
+		<nav class="navbar navbar-expand-lg fixed-top mb-5">
+			<div class="container-fluid">
+				<a class="navbar-brand me-auto gold" href="index.html">
+					<img src="logo.png" alt="" style="position: absolute; top: 0; left: 6px; width: 100px;">
+				</a>
+			</div>
+			<input class="search" type="search" placeholder="Search">
+			<i class="fa-solid fa-sun me-3" id="toggleDark"></i>
+			<a href="farsi.html"><i class="fa-solid fa-language me-3 language"></i></a>
+		</nav>
+		<br  id="top">
+		<br>
+		<!--END PART OF NAVBAR-->
+
+
+		<!--PART OF TIME-->
+		<div class="time mt-4" style="display: flex; justify-content: center; align-items: center;">
+			<section id="curriculum" style="width: 500px; padding: 40px;">
+			<h2>Class Schedule & Curriculum</h2>
+			<p><strong>Class Hours:</strong> 9:00 AM – 10:00 PM <br> Saturday to Thursday</p>
+			<p><strong>Daily Subjects Include:</strong></p>
+			<ul>
+				<li>Quran with Tajweed</li>
+				<li>Dari Language</li>
+				<li>Mathematics (Basic to Advanced)</li>
+				<li>Computer Studies (Windows 8, 10, 11 & Microsoft Office)</li>
+				<li>Science</li>
+				<li>English</li>
+				<li>History</li>
+				<li>Geography</li>
+				<li>Islamic Studies</li>
+				<li>Civic Education</li>
+			</ul>
+			<p>Students attend a full-day program with all major school subjects taught daily through lectures, practice sessions, and interactive activities — ensuring deep understanding and academic growth.</p>
+			</section>
+		</div>
+		<!--END PART OF TIME-->
+
+
+		<!--PART OF WHY CHOOSE US-->
+		<div class="container choose-us mt-2 mb-5">
+			<div class="row mb-5">
+				<div class="col-md-12">
+					<h1 class="choose">WHY CHOOSE US</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="text1-icon border-bottom">
+						<div>
+							<h6>Expert Instructors</h6>
+							<p>Learn from top teachers and subject matter experts.</p>
+						</div>
+						<i class="fa-solid fa-chalkboard-user ps-4"></i>
+					</div>
+					<div class="text1-icon">
+						<div>
+							<h6>Up-to-date and Comprehensive Content</h6>
+							<p>Access the latest educational resources and materials.</p>
+						</div>
+						<i class="fa-solid fa-book-open ps-4"></i>
+					</div>
+				</div>
+				<div class="col-md-4 image-choose">
+					<img src="learn.png" alt="">
+				</div>
+				<div class="col-md-4">
+					<div class="text2-icon border-bottom">
+						<i class="fa-solid fa-laptop pe-4"></i>
+						<div>
+							<h6>24/7 Online Access</h6>
+							<p>Study anytime, anywhere with no limitations.</p>
+						</div>
+					</div>
+					<div class="text2-icon">
+						<i class="fa-solid fa-certificate pe-4"></i>
+						<div>
+							<h6>Recognized Certificates</h6>
+							<p>Earn valid certificates to strengthen your résumé.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--END PART OF WHY CHOOSE US-->
+
+
+		<a href="#top" class="to-top">
+			<i class="fas fa-chevron-up"></i>
+		</a>
+
+
+		<!--START PART OF FOOTER-->
+		<footer class="mt-5">
+			<div class="row row-footer">
+				<div class="col-md-4">
+					<h3>QADERI <div class="underline"><span></span></div></h3>
+					<p style="margin-top: 0;">Achieve Academic Success with a Smart <br> Plan!
+						It’s time to study smarter, not harder. <br>
+						Join us and take confident steps toward your dreams!
+						<br>
+						Free consultation & registration:</p>
+				</div>
+				<div class="col-md-4">
+					<h3>Office <div class="underline"><span></span></div></h3>
+					<p>Mazar-e-Sharif</p>
+					<p>Zahiruddin faryabi road</p>
+					<h6 style="margin-bottom: 20px;">+93748278164</h6>
+				</div>
+				<div class="col-md-4">
+					<h3>Contact us <div class="underline"><span></span></div></h3>
+					<div class="social-icons">
+						<a href="https://instagram.com/shakila_qaderi"><i class="fab fa-instagram"></i></a>
+						<a href="https://t.me/shakila_qaderi"><i class="fab fa-telegram"></i></a>
+						<a href="https://wa.me/93748278164" target="_blank"><i class="fab fa-whatsapp"></i></a>
+						<a href="mailto:shakilaqaderi369@gmail.com"><i class="fas fa-envelope email"></i></a>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<p class="text" style="font-size: 16px;">Your dreams are waiting for you.</p>
+		</footer>
+		<!--END PART OF FOOTER-->
+
+
+		<!--PART OF JAVASCRIPT-->
+		<script>
+			const toTop = document.querySelector(".to-top");
+
+			window.addEventListener("scroll", ()=>{
+				if(window.pageYOffset > 450){
+					toTop.classList.add("active");
+				}
+				else{
+					toTop.classList.remove("active");
+				}
+			})
+
+			const toggle = document.getElementById('toggleDark');
+			const body = document.querySelector('body');
+			toggle.addEventListener('click', function(){
+				this.classList.toggle('fa-moon')
+				if(this.classList.toggle('fa-sun')){
+					body.style.background = '#fff';
+					body.style.color = '#000';
+					body.style.transition = '1s'
+				}
+				else{
+					body.style.background = '#000';
+					body.style.color = '#f9fafa';
+					body.style.transition = '1s'
+				}
+			})
+		</script>
+		<!--PART OF JAVASCRIPT-->
+	</body>
+</html>
