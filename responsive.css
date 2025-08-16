@@ -1,77 +1,99 @@
-/*footer*/
-@media (max-width: 1116px){
-	footer .social-icons .fab{
-		width: 33px;
-		height: 33px;
-		line-height: 33px;
-		font-size: 15px;
-		margin-right: 8px;
+/* FOOTER */
+@media (max-width: 1116px) {
+	footer .social-icons .fab {
+	  width: 33px;
+	  height: 33px;
+	  line-height: 33px;
+	  font-size: 15px;
+	  margin-right: 8px;
 	}
-	footer h6{
-		font-size: 14px;
+	footer h6 {
+	  font-size: 14px;
 	}
-}
-@media (max-width: 938px){
-	footer .social-icons .fab, .email{
-		width: 30px;
-		height: 30px;
-		line-height: 30px;
-		font-size: 13px;
-		margin-right: 5px;
+  }
+  
+  @media (max-width: 938px) {
+	footer .social-icons .fab, 
+	footer .email {
+	  width: 30px;
+	  height: 30px;
+	  line-height: 30px;
+	  font-size: 13px;
+	  margin-right: 5px;
 	}
-}
-@media (max-width: 770px){
-	footer .social-icons .fab, .email{
-		width: 36px;
-		height: 36px;
-		line-height: 36px;
-		font-size: 15px;
-		margin-right: 10px;
+  }
+  
+  @media (max-width: 770px) {
+	footer .social-icons .fab, 
+	footer .email {
+	  width: 36px;
+	  height: 36px;
+	  line-height: 36px;
+	  font-size: 15px;
+	  margin-right: 10px;
 	}
-	footer{
-		bottom: unset;
+	footer {
+	  bottom: unset;
 	}
-	footer .col-md-3{
-		flex-basis: 100%;
+	footer .col-md-3,
+	.col-md-3:nth-child(2),
+	.col-md-3:nth-child(3) {
+	  flex-basis: 100% !important; /* ستون‌ها ستونی شوند */
+	  text-align: center;
 	}
-	.col-md-3:nth-child(2), .col-md-3:nth-child(3){
-		flex-basis: 100%;
+  }
+  
+  /* NAVBAR & MAIN CONTENT */
+  @media (max-width: 768px) {
+	.search {
+	  right: 50%;
+	  top: 80px;
+	  transform: translateX(50%);
+	  width: 60%;
 	}
-}
-@media (max-width: 420px){
-	.navbar-toggler-icon{
-		font-size: 10px;
+	#toggleDark,
+	.language {
+	  position: static;
+	  margin: 10px;
 	}
-	.navbar{
-		font-size: 12px;
+  }
+  
+  /* VERY SMALL DEVICES */
+  @media (max-width: 420px) {
+	.navbar-toggler-icon {
+	  font-size: 10px;
 	}
-	#toggleDark{
-		font-size: 13px;
-		visibility: visible;
-		position: absolute;
-		right: 2px;
-		top: 27px;
+	.navbar {
+	  font-size: 12px;
 	}
-	.language{
-		font-size: 13px;
-		visibility: visible;
-		position: absolute;
-		right: 25px;
-		top: 27px;
+	#toggleDark {
+	  font-size: 13px;
+	  visibility: visible;
+	  position: absolute;
+	  right: 2px;
+	  top: 27px;
 	}
-	.choose{
-		position: relative;
-		bottom: -25px;
+	.language {
+	  font-size: 13px;
+	  visibility: visible;
+	  position: absolute;
+	  right: 25px;
+	  top: 27px;
 	}
-	.choose-us{
-		font-size: 13px;
+	.choose {
+	  position: relative;
+	  bottom: -25px;
 	}
-	section, footer{
-		font-size: 13px;
+	.choose-us {
+	  font-size: 13px;
 	}
-	.search{
-		position: absolute;
-		right: 65px;
-		top: 19px;
+	section, footer {
+	  font-size: 13px;
 	}
-}
+	.search {
+	  position: absolute;
+	  right: 65px;
+	  top: 19px;
+	  width: 100px;
+	}
+  }
