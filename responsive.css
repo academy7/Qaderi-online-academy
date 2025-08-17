@@ -99,6 +99,8 @@
 	}
 	.pdf{
 		font-size: 3px;
+		position: relative;
+		top: -45px;
 	}
 	.logo{
 		position: absolute;
@@ -108,4 +110,5 @@
 		height: auto;
 	}
   }
+
 
