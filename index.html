@@ -46,6 +46,28 @@
 				margin-bottom: 20px;
 			}
 			}
+
+			.modal {
+				display: none;
+				position: fixed; z-index: 1000;
+				left: 0; top: 0; width: 100%; height: 100%;
+				background-color: rgba(0,0,0,0.5);
+			}
+			.modal-content {
+				background-color: #fff;
+				margin: 5% auto; padding: 0;
+				border-radius: 8px; width: 90%; max-width: 600px;
+				overflow: hidden;
+			}
+			.close {
+				color: white; float: left; font-size: 28px; font-weight: bold;
+				position: absolute; top: 10px; left: 20px; cursor: pointer;
+			}
+			.modal-header {
+				background: #004332; padding: 10px; color: white;
+				position: relative;
+			}
+			iframe { width: 100%; height: 500px; border: none; }
 		</style>
 	</head>
 	<body style="background-color: #f7f2eb;">
@@ -85,7 +107,23 @@
 			</ul>
 			<p>Students attend a full-day program with all major school subjects taught daily through lectures, practice sessions, and interactive activities — ensuring deep understanding and academic growth.</p>
 			</section>
-			<button style="margin-left: 10px; background-color: #004332; border: none; color: #fff; font-size: 14px; padding: 2px 8px; border-radius: 7px;">Apply Now</button>
+
+			<button id="openFormBtn" style="margin-left: 10px; background-color: #004332; border: none; color: #fff; font-size: 14px; padding: 2px 8px; border-radius: 7px;">
+				Apply Now
+			</button>
+			  
+			<!-- APPLY BUTTON-->
+			<div id="signupModal" class="modal">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<span class="close" id="closeModal">&times;</span>
+					<h3>Registration Form</h3>
+				  </div>
+				  <iframe src="  https://docs.google.com/forms/d/e/1FAIpQLSfiesvxRKN3bKkKUyKluI0n7RCWYYDgTnpUnHDpXi1G2gEbSQ/viewform?embedded=true
+				  ">Loading...</iframe>
+				</div>
+			</div>
+			<!-- END APPLY BUTTON-->
 		</div>
 		<!-- END PART OF TIME -->
 
@@ -214,6 +252,14 @@
 			body.style.transition = '1s'
 			}
 		});
+
+		const openBtn = document.getElementById("openFormBtn");
+		const modal = document.getElementById("signupModal");
+		const closeBtn = document.getElementById("closeModal");
+		
+		openBtn.onclick = () => modal.style.display = "block";
+		closeBtn.onclick = () => modal.style.display = "none";
+		window.onclick = e => { if (e.target === modal) modal.style.display = "none"; };
 		</script>
 	</body>
 </html>
