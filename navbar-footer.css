@@ -256,4 +256,10 @@ footer .underline span {
 	color: #000;
 	transform: scale(1.05);
 	}
+  .openFormBtn:hover {
+    background-color: #ecca95;
+    color: #000;
+    transform: scale(1.05);
+  }
+
 
