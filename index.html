@@ -22,6 +22,8 @@
 			img {
 			max-width: 100%;
 			height: auto;
+			position: relative;
+			top: 23px;
 			}
 
 			#curriculum {
@@ -81,7 +83,7 @@
 			</div>
 			<input class="search" type="search" placeholder="Search">
 			<i class="fa-solid fa-sun me-3" id="toggleDark"></i>
-			<a href="farsi.html"><i class="fa-solid fa-language me-3 language"></i></a>
+			<a href="farsi.html"><i class="fa-solid fa-globe me-3 language"></i></a>
 		</nav>
 		<br id="top">
 		<br>
@@ -102,6 +104,22 @@
 				<li>School Subjects</li>
 			</ul>
 			<p>Students attend a full-day program with all major school subjects taught daily through lectures, practice sessions, and interactive activities — ensuring deep understanding and academic growth.</p>
+			<button id="openFormBtn" style="margin-left: 10px; background-color: #004332; border: none; color: #fff; font-size: 14px; padding: 2px 8px; border-radius: 7px;">
+				Apply Now
+			</button>
+			  
+			<!-- APPLY BUTTON-->
+			<div id="signupModal" class="modal">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<span class="close" id="closeModal">&times;</span>
+					<h3>Registration Form</h3>
+				  </div>
+				  <iframe src="  https://docs.google.com/forms/d/e/1FAIpQLSfiesvxRKN3bKkKUyKluI0n7RCWYYDgTnpUnHDpXi1G2gEbSQ/viewform?embedded=true
+				  ">Loading...</iframe>
+				</div>
+			</div>
+			<!-- END APPLY BUTTON-->
 			</section>
 
 			<button id="openFormBtn" style="margin-left: 10px; background-color: #004332; border: none; color: #fff; font-size: 14px; padding: 2px 8px; border-radius: 7px;">
@@ -258,6 +276,7 @@
 		</script>
 	</body>
 </html>
+
 
 
 
