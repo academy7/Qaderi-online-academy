@@ -185,12 +185,12 @@
 			<p><strong>Available Times and Days:</strong> 9:00 AM – 10:00 PM <br> Saturday to Thursday</p>
 			
 			<ul class="subject-list">
-			  <li>Quran with Tajweed <span>(500AFN)</span></li>
-			  <li>Dari Language <span>(500AFN)</span></li>
-			  <li>Mathematics (Basic to Advanced) <span>(500AFN)</span></li>
-			  <li>Computer Studies (Windows 8, 10, 11 & Microsoft Office) <span>(1000AFN)</span></li>
-			  <li>Web Designing (HTML, CSS, BOOTSTRAP, JAVASCRIPT) <span>(1000AFN)</span></li>
-			  <li>School Subjects <span>(500AFN)</span></li>
+			  <li>Quran with Tajweed <span>(500AF)</span></li>
+			  <li>Dari Language <span>(500AF)</span></li>
+			  <li>Mathematics (Basic to Advanced) <span>(500AF)</span></li>
+			  <li>Computer Studies (Windows 8, 10, 11 & Microsoft Office) <span>(1000AF)</span></li>
+			  <li>Web Designing (HTML, CSS, BOOTSTRAP, JAVASCRIPT) <span>(1000AF)</span></li>
+			  <li>School Subjects <span>(500AF)</span></li>
 			</ul>
 			
 			<p>Students participate in a structured curriculum where each subject is taught separately 
@@ -298,15 +298,59 @@
 
 
 		<!-- PART OF Policy Course -->
-		<div class="d-flex justify-content-center align-items-center pdf">
-			<div class="div">
-				<h2>Sample Course Policy</h2><br>
-				<div class="pdf-wrapper">
-				<a href="file1.pdf" class="pdf-link" download>Policy Course Coding</a>
-				<a href="file2.pdf" class="pdf-link" download>Policy Course IT</a>
-				</div>
-			</div>
+		<div class="course-policy-container">
+		<h2 class="title">📘 Sample Course Policy</h2>
+		<div class="button-group">
+			<a href="file1.pdf" class="policy-button" download>📄 Policy Course Coding</a>
+			<a href="file2.pdf" class="policy-button" download>💻 Policy Course IT</a>
 		</div>
+		</div>
+
+		<style>
+		.course-policy-container {
+			text-align: center;
+			padding: 50px 20px;
+			border-radius: 15px;
+			box-shadow: 0 0 20px rgba(0,0,0,0.05);
+			font-family: 'Segoe UI', sans-serif;
+		}
+
+		.title {
+			font-size: 28px;
+			margin-bottom: 30px;
+			color: #333;
+		}
+
+		.button-group {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+
+		.policy-button {
+			background: #004d40;
+			color: #fff;
+			padding: 14px 28px;
+			border-radius: 8px;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: 500;
+			transition: 0.3s ease;
+		}
+
+		.policy-button:hover {
+			background: #00695c;
+			transform: scale(1.05);
+		}
+
+		@media (max-width: 600px) {
+			.policy-button {
+			width: 100%;
+			text-align: center;
+			}
+		}
+		</style>
 		<!-- END PART OF Policy Course -->
 
 
@@ -384,7 +428,6 @@
 		</script>
 	</body>
 </html>
-
 
 
 
